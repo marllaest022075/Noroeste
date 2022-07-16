@@ -1,0 +1,98 @@
+﻿ESTRUCTURA DE DATOS
+
+Proyecto de la Linea Aerea "Noroeste".
+
+Generalidades.
+.-	La  Linea Aerea Noroeste trabaja en 10 aeropuertos de las principales ciudades del Noroeste del Pais 
+    (Mazatlan, Culiacan, Los Mochis, Cd. Obregon, Hermosillo, Nogales, Puerto Peñasco, Mexicali, Tijuana, y Los Cabos).
+.-	Un aeropuerto no tiene restricciones en cuanto al numero de aviones que pueden estar en el.
+.-	Un avion cuenta con una matricula alfanumerica.
+.-	Un avion puede transportar como maximo 5 pasajeros.
+.-	Los pasajeros cuentan con un nombre.
+
+
+
+Aclaraciones.
+.-	Los pasajeros pueden subir a un avion que se encuentre en algun aeropuerto.
+.-	Para poder que un avion despegue se requiere que:
+o	 Al menos exista un pasajero.
+o	Tenga un destino (cuidar de que el destino exista y que sea diferente del aeropuerto origen).
+.-	Al bajar un avion en su aeropuerto destino, se debera bajar a todos los pasajeros.
+.-	Los aeropuertos deberan de estar en un arreglo de objetos, incluyendo el aire.
+.-	El alumno escogera el tipo de lista de aviones y de pasajeros. 
+       Se deja a su libre albedrio si es simple o doble.
+
+
+Que es lo que se requiere ? MENU DE OPCIONES.
+
+.-	Dar de alta pasajeros y subirlos a un avion.
+.-	Dar de alta aviones en un aeropuerto especifico.
+.-	Conocer los aviones que se encuentren en un aeropuerto.
+.-	Conocer los aviones que se encuentren volando.
+.-	Conocer la lista de pasajeros en un avion.
+.-	Conocer la ubicacion de un pasajero.
+.-	Conocer la ubicacion de un avion.
+.-	Mandar despegar un avion.
+.-	Aterrizar un avion.
+
+
+
+Detalles de cada opcion:
+
+.-	Dar de alta pasajeros y subirlos a un avion.
+Aqui se pedira el numero de pasajeros a dar de alta, 
+y se debera preguntar por cada pasajero el aeropuerto (poner menu de aeropuertos), y se desplegaran las matriculas
+    de los aviones que estan en el aeropuerto, 
+** si no hay aviones mostrar un mensaje y regresarse al menu de aeropuertos para elegir otro. 
+** Si hay aviones en el aeropuerto, elegir uno, si este no tiene cupo, se debera mostrar un mensaje y se debera 
+    volver a desplegar los aviones disponibles que hay en el aeropuerto, y si ya no hay, 
+**se debera a volver a desplegar el menu de aeropuertos para que se elija otro.
+ **Se debera pedir a cada pasajero su nombre.
+NOTA ACLARATORIA: desde que se pide el numero de pasajeros a dar de alta, se debera validar si hay espacio para
+    ellos en todos los aeropuertos, si no hay espacios, mostrar un mensaje y regresar al menu principal. 
+    Asi mismo, cuando si hay espacio, y se elige un aeropuerto, si este no tiene aviones, mostrar un mensaje y
+    se devolvera al menu de aeropuertos para elegir otro. En caso de que si existan aviones pero estos estan 
+    llenos, mostrar un mensaje de error y regresarse al menu principal para elegir otro aeropuerto.
+
+.-	Dar de alta aviones en un aeropuerto especifico.
+En esta opcion se pedira el numero de aviones a dar de alta, y posteriormente, se desplegraran el menu de 
+    aeropuertos para que se elija en el que se quiera insertar los aviones (todos los aviones van al mismo 
+    aeropuerto). Por cada avion se debera pedir la matricula y se debera validar que NO se deben dar de alta 2 o 
+    mas aviones con la misma matricula.
+
+.-	Conocer los aviones que se encuentren en un aeropuerto.
+En esta opcion se desplegraran el menu de aeropuertos para que se elija en el que se desea que se muestre sus 
+    aviones. Se debera mostrar la matricula de cada avion con el numero de pasajeros que tienen. Si no hay 
+    aviones se debera desplegar un mensaje y se volvera al menu principal.
+
+.-	Conocer los aviones que se encuentren volando.
+Se debera mostrar la matricula de cada avion que se encuentre volando con el numero de pasajeros que tienen y su 
+    destino. Si no hay aviones se debera desplegar un mensaje y se volvera al menu principal.
+
+.-	Conocer la lista de pasajeros en un avion.
+Se debera pedir la matricula del avion, y se buscara, si este es encontrado, se desplegraran el nombre de sus 
+    pasajeros, si es que los hay, si no, mandar un mensaje. Si no existe el avion, mostrar un mensaje indicandolo.
+
+.-	Conocer la ubicacion de un pasajero.
+En esta opcion se pedira el nombre del pasajero a buscar, y se buscara en TODOS los aviones, incluso los que se 
+   encuentren volando. Puede haber varios pasajeros con el mismo nombre por lo que se pondran todos. Una vez 
+   encontrado el o los pasajeros, se desplegraran la matricula del avion donde se encuentra, Asi como el 
+   aeropuerto donde se encuentra dicho avion, incluso si se encuentra volando. Si no se encuentra ningun 
+   pasajero con ese nombre, desplegar un mensaje indicandolo.
+
+.-	Conocer la ubicacion de un avion.
+Aqui se pedira la matricula del avion y se buscara en todos los aeropuertos, incluyendo los que se encuentren 
+   volando y se desplegraran su ubicacion en caso de que se encuentre, en caso contrario, mostrar un mensaje 
+   indicandolo.
+
+.-	Mandar despegar un avion.
+Aqui se pedira el aeropuerto (poner menu de aeropuertos), y se desplegaran las matriculas de los aviones que 
+estan en el aeropuerto, si no hay aviones mostrar un mensaje y regresarse al menu principal. Si existen aviones, 
+se debera escoger uno de ellos y se revisara si tiene al menos un pasajero, si es Asi, se pedira el destino y se 
+mandara a volar, eliminandolo de la lista de ese aeropuerto. En caso, de que no tenga pasajeros, desplegar un 
+mensaje y volver al menu principal.
+
+.-	Aterrizar un avion.
+En esta opcion se desplegaran las matriculas de los aviones que se encuentran volando, si los hay, se debera 
+escoger uno de ellos, y se eliminara de la lista de los del aire, y se debera insertar en la lista del aeropuerto
+destino, y se eliminaran todos los pasajeros. Si no hay aviones volando mostrar un mensaje indicandolo.
