@@ -6,9 +6,9 @@ Generalidades.
 .-	La  Linea Aerea Noroeste trabaja en 10 aeropuertos de las principales ciudades del Noroeste del Pais 
     (Mazatlan, Culiacan, Los Mochis, Cd. Obregon, Hermosillo, Nogales, Puerto Peñasco, Mexicali, Tijuana, y Los Cabos).
 .-	Un aeropuerto no tiene restricciones en cuanto al numero de aviones que pueden estar en el.
-.-	Un avion cuenta con una matricula alfanumerica.
+.-	Un avion cuenta con una matricula alfanumerica.-----ya
 .-	Un avion puede transportar como maximo 5 pasajeros.
-.-	Los pasajeros cuentan con un nombre.
+.-	Los pasajeros cuentan con un nombre.----------------ya
 
 
 

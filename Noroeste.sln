@@ -8,9 +8,56 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Requisitos", "Requisitos", 
 		Instrucciones.txt = Instrucciones.txt
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Src", "Src", "{F381574F-C707-4A75-BD48-1FD8907E0C49}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Test", "Test", "{195ECEC8-F53B-475D-B74D-B9090C365639}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Noroeste.Entities", "Src\Noroeste.Entities\Noroeste.Entities.csproj", "{2DF355DE-36B2-4549-89F9-5E84A5E278B8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Noroeste.EntitesTest", "Test\Noroeste.EntitesTest\Noroeste.EntitesTest.csproj", "{6264AEA9-B66C-4615-AC76-A6D0BC892F1A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Noroeste.Constantes", "Src\Noroeste.Constantes\Noroeste.Constantes.csproj", "{05423804-E0A4-4C29-9A7D-5C3C47A069AB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Noroeste.LogicaTest", "Test\Noroeste.LogicaTest\Noroeste.LogicaTest.csproj", "{55F68911-622C-475A-9284-82E382050130}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Noroeste.Logica", "Src\Noroeste.Logica\Noroeste.Logica.csproj", "{0C067A97-47F5-4793-AC0F-98CECB092167}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2DF355DE-36B2-4549-89F9-5E84A5E278B8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2DF355DE-36B2-4549-89F9-5E84A5E278B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2DF355DE-36B2-4549-89F9-5E84A5E278B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2DF355DE-36B2-4549-89F9-5E84A5E278B8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6264AEA9-B66C-4615-AC76-A6D0BC892F1A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6264AEA9-B66C-4615-AC76-A6D0BC892F1A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6264AEA9-B66C-4615-AC76-A6D0BC892F1A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6264AEA9-B66C-4615-AC76-A6D0BC892F1A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{05423804-E0A4-4C29-9A7D-5C3C47A069AB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{05423804-E0A4-4C29-9A7D-5C3C47A069AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{05423804-E0A4-4C29-9A7D-5C3C47A069AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{05423804-E0A4-4C29-9A7D-5C3C47A069AB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{55F68911-622C-475A-9284-82E382050130}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{55F68911-622C-475A-9284-82E382050130}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{55F68911-622C-475A-9284-82E382050130}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{55F68911-622C-475A-9284-82E382050130}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0C067A97-47F5-4793-AC0F-98CECB092167}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0C067A97-47F5-4793-AC0F-98CECB092167}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0C067A97-47F5-4793-AC0F-98CECB092167}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0C067A97-47F5-4793-AC0F-98CECB092167}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{2DF355DE-36B2-4549-89F9-5E84A5E278B8} = {F381574F-C707-4A75-BD48-1FD8907E0C49}
+		{6264AEA9-B66C-4615-AC76-A6D0BC892F1A} = {195ECEC8-F53B-475D-B74D-B9090C365639}
+		{05423804-E0A4-4C29-9A7D-5C3C47A069AB} = {F381574F-C707-4A75-BD48-1FD8907E0C49}
+		{55F68911-622C-475A-9284-82E382050130} = {195ECEC8-F53B-475D-B74D-B9090C365639}
+		{0C067A97-47F5-4793-AC0F-98CECB092167} = {F381574F-C707-4A75-BD48-1FD8907E0C49}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {31D9A4D6-77E3-45AD-97E6-4AE03C93C332}
